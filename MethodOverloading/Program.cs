@@ -11,21 +11,32 @@ namespace MethodOverloading
         {
             //Create a method named Add, that accepts two integers and returns the sum of those two integers
             int answer1 = Add(5, 5);
+            Console.WriteLine(" ");
+            Console.WriteLine("this is the function that was executed");
+            Console.WriteLine("int answer1 = Add(5, 5);");
             Console.WriteLine(answer1);
 
             //Now create an overload of the Add method to account for being able to add two decimals together
             // m is needed for decimal type
+            Console.WriteLine(" ");
+            Console.WriteLine("this is the function that was executed");
+            Console.WriteLine("Decimal answer2 = Add(3.23m, 543.42m);");
             Decimal answer2 = Add(3.23m, 543.42m);
             Console.WriteLine(answer2);
 
             //Now create another overload of the Add method that returns a string and accepts 3 parameters: 2 integers and 1 boolean
             //If the boolean parameter is equal to true, the Add method will return the sum of the 2 numbers plus the word “dollars” at the end of the string.
-            //You must also account for the appropriate grammar of the string - so it can’t be “1 dollars”
-
-            //String answer3 = Add(10, 10, true);
+            //You must also account for the appropriate grammar of the string - so it can’t be “1 dollars”                 
+            //Console.WriteLine(" ");
+            //Console.WriteLine("this is the function that was executed");
+            //Console.WriteLine("String answer3 = Add(10,10,false);");
+            //String answer3 = Add(10,10,false);
             //Console.WriteLine(answer3);
 
-            String answer3 = Add(10,10,false);
+            Console.WriteLine(" ");
+            Console.WriteLine("this is the function that was executed");
+            Console.WriteLine("String answer3 = Add(10,10,true);");
+            String answer3 = Add(10, 10, true);
             Console.WriteLine(answer3);
 
 
